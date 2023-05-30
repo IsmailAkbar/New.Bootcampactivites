@@ -1,0 +1,26 @@
+/* css single element
+grouping selector
+Id selector
+class selector 
+*/
+
+.font{font-family:ariel;
+    font-size:30px;background-color: blueviolet;
+
+
+}
+
+body {background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+opacity: 1;}
+
+p {background-color: beige;}
+
+div {background-color: rgb(89, 54, 54);}
+
+#d2 {background-color: hsl(14, 87%, 31%);}
+
+.yell {text-align:center;text-transform:capitalize;text-decoration: line-through dotted;}
+ #hell {background-color: #32a852;}
+
+
+
