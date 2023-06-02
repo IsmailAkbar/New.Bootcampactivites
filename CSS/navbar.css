@@ -1,0 +1,101 @@
+
+body {
+background-image: url(https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg);
+
+background-repeat: no-repeat;
+background-size:cover ;
+background-attachment:fixed;
+}
+
+header {margin-top: -10px;
+background-color: rgb(33, 125, 125);
+text-align: center;
+margin-right: -8px;
+margin-left: -8px;
+color: rgb(255, 255, 255);
+}
+
+
+
+ul {
+padding: 0px;
+margin: 0px;
+list-style: none;
+top: 0px;
+margin-left: 430px;
+position: relative;
+}
+
+li {
+display: inline-block;
+text-align: center;
+}
+
+li a{
+    padding: 20px;
+color: rgb(46, 46, 57);
+font-size: 20px;
+text-decoration: none;
+display: inline-block;
+
+margin: 10px;
+}
+
+nav {
+background-color: rgb(230, 232, 226);
+margin-left: -5px;
+margin-right: -8px;
+margin-top: 0px;
+position: sticky;
+top: 0px;
+}
+
+
+#img1 {width: 500px;
+height: 500px;
+}
+
+
+
+
+
+
+
+
+/* css ul padding 0px
+margin 0 px
+liststyle type none
+background color grey
+position stick 
+top 0px
+
+li a display inline-block
+padding
+color
+fontsize 20px#
+textdecoration none
+
+li float left
+
+
+(target blank for opening in new page)
+
+
+
+(starting with * padding and marigin at 0) 
+
+zindex - 1 so nav bar goes over content not under
+
+*/
+/*Add a drop down menu to the subjects
+
+ CSS
+
+ HTML
+
+ JavaScript
+
+ Database
+
+ */ */
+

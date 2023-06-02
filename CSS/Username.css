@@ -1,0 +1,101 @@
+fieldset {text-align: center;
+width: 300px;
+margin-left: 570px;
+margin-top: 300px;
+padding: 40px;
+background-color: antiquewhite;
+
+
+}
+
+
+body{
+    background-color: rgb(179, 172, 176);
+}
+
+#iu1 {border-style: none;
+    border-bottom:thin black solid;
+    background-color: antiquewhite;
+
+
+
+}
+
+#ip1 {border-style: none;
+    border-bottom: thin black solid;
+    background-color: antiquewhite;
+margin-left: 4px;
+
+
+
+}
+
+#login {margin-left:  190px;
+background-color: black;
+color: aqua;
+
+}
+
+#login:hover {background-color: green;}
+
+
+
+
+.h2 {
+    font-size: 20px;
+border: 1px solid;
+text-align: center;
+background-color: aquamarine;
+width: 400px;
+    position:absolute;
+   bottom: 400px;
+display: inline;
+left: 567px;
+}
+
+
+
+
+
+
+
+
+
+
+/* #button2 {margin-top: 180px;
+    background-image: url(https://media.istockphoto.com/id/1347020501/vector/sound-waves-dark-red-light-abstract-technology-background.jpg?s=612x612&w=0&k=20&c=DuXxQ4yhzKQZ2KWoWtgZXIc0Spl_aTRN271meFptVa8=); */
+
+
+
+
+
+
+
+
+
+}
+
+/* #button2:hover { cursor: help;
+    font-size: 20px;  
+color: azure;
+
+
+
+}
+
+#button3 {
+
+
+background-color: orange;
+
+}
+
+#button3:hover {
+
+
+    cursor:pointer;
+    font-size: 20px;  
+color: azure; */
+
+}
+

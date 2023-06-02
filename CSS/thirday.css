@@ -1,0 +1,186 @@
+input[type="text"] { 
+    border-style: none;
+    border-bottom: solid 5px black;
+height: 30px;
+width: 200px;
+outline: none;
+
+}
+/*CSS Display Property
+
+  The display property specifies the display behavior of an element.
+
+    Below are some of the common display properties we can use:
+
+   
+
+  display:none;
+
+
+
+
+  none =    The element is completely removed
+
+   
+
+  inline = Displays an element as an inline element (like <span>).
+
+            Any height and width properties will have no effect
+
+   
+
+  block = Displays an element as a block element (like <p>).
+
+            It starts on a new line, and takes up the whole width
+
+   
+
+  inline-block = Displays an element as an inline-level block container.
+
+                  The element itself is formatted as an inline element,
+
+                  but you can apply height and width values */
+/* visibility: */
+/* position: */
+
+.d1 {
+
+width: 300px;
+height: 300px;
+background-color: beige;
+
+}
+
+.d2 {
+    width: 200px;
+    height:200px;
+    background-color: blue;
+position: relative;
+top: 50px;
+
+
+}
+
+.d3 {
+
+width: 100px;
+height: 100px;
+background-color: brown;
+/* position: relative;
+top: 50px; */
+position: absolute;
+top: 50px;
+}
+
+/* body {text-align: center;
+    display:flex ;
+    align-items: center;
+    justify-content: center; */
+
+
+
+#img1,#img2,#img3 {
+
+    width: 300px;
+    height: 400px;
+}
+
+#img1 {
+
+position: relative;
+left: 100px;
+
+}
+
+
+#img2 { position: absolute;
+top: 450px;
+
+
+
+}
+
+#img3 {
+position: relative;
+left: 150px;
+bottom: 50px;
+}
+
+
+.hi{
+position: sticky;
+top: 0px;
+background-color: black;
+color: aliceblue;
+/* add a table
+
+add some data inside table
+
+desing table using CSS */
+
+}
+
+th { border: solid 2px black;
+
+
+
+}
+
+
+td { border: solid 2px black;
+
+
+
+}
+
+
+/* ul
+li a
+li a
+li a
+ul
+
+css ul padding 0px
+margin 0 px
+liststyle type none
+background color grey
+position stick 
+top 0px
+
+li a display inline-block
+padding
+color
+fontsize 20px#
+textdecoration none
+
+li float left
+
+
+(target blank for opening in new page)
+
+
+
+(starting with * padding and marigin at 0) 
+
+zindex - 1 so nav bar goes over content not under
+
+*/
+/*Add a drop down menu to the subjects
+
+ CSS
+
+ HTML
+
+ JavaScript
+
+ Database
+
+ */
+
+
+
+
+
+
+
+

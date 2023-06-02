@@ -1,0 +1,48 @@
+.p2 {background-color: brown;
+color: rgb(180, 193, 205);}
+
+body{
+background-color: antiquewhite;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-size: 100vh 100vw; */
+background-attachment: fixed;
+}
+
+div{background-image: url(https://css-tricks.com/wp-content/uploads/2022/09/checkerboard-gradient.jpg) ;
+width: 500px;
+height: 500px;
+background-position: right;
+padding: 20px;
+}
+
+
+.para1{border: solid;
+
+
+
+}
+.repeat {border-bottom: 12px double;
+    
+    width: 500px;
+    height: 500px;
+    /* border-top-right-radius: 200px 200px; */
+    border-radius: 50%;
+    
+    
+    ;}
+/* 
+Task
+Styling input elements               
+text box
+
+
+*/
+
+    /* CSS box model - margin space outside of border
+                    padding space between border and content 
+                    
+                    css float property - 
+                    css clear property - 
+                    
+                    */
