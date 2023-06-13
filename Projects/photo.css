@@ -1,0 +1,221 @@
+
+* {
+text-decoration: none;
+
+
+
+}
+
+
+
+
+header {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+
+#logo1 {
+
+width: 610px;
+height: 440px;
+
+
+}
+
+
+
+.navBar {
+
+background-image: url(https://wallpaperaccess.com/full/1853607.jpg);
+background-repeat: no-repeat;
+background-position: bottom ;
+background-size: cover;
+font-family: Calibri;
+    padding-right: 15px;
+padding-left: 15px;
+
+top: 0px;
+
+}
+
+.navDiv {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+li{
+list-style: none;
+display: inline-block;
+
+
+}
+
+li a{
+color: black;
+font-size: 1.2rem;
+font-weight: bold;
+margin-right: 25px;
+transition: all 0.25s ease;
+}
+
+button {
+
+background: #00B2FF;
+margin-left: 10px;
+border-radius: 10px;
+padding: 10px;
+width: 120px;
+}
+
+#sub1 {
+color: white;
+font-weight: bold;
+font-size: 1rem;
+
+}
+
+
+#sub {
+    position: relative;
+    transform: rotate(180deg);
+    animation-name: subscribe;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+#sub:focus {
+transform: rotate(360deg);
+background-color: lightgreen;
+}
+
+
+#sub:hover {
+    background-color: crimson;
+    
+}
+
+
+@keyframes subscribe{
+
+0%{right: 0px;}
+25%{right:100px;}
+50%{right:200px;}
+75%{right:100px;}
+100%{right: 0px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+    
+
+.subMenu {
+    display:none;
+    position: absolute;
+    width: 100px;
+   top:490px;
+    padding: 10px;
+    
+    }
+    
+  .aboutUs:hover    .subMenu{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: rgba(163, 166, 163, 0.071);
+bo
+    }
+    
+    .subMenu a {
+  color: rgb(104, 104, 104);
+
+
+    }
+
+
+    .container { display: grid;
+        background-color: whitesmoke;
+    grid-template-columns:  1fr;
+    grid-template-rows: 100px 100px ;
+    column-gap: 5px;
+    row-gap: 100px;
+    
+    
+    
+    }
+    
+    .container div {
+    
+    background-color: white;}
+
+    .back {
+background-color: whitesmoke;
+
+
+
+
+    }
+
+    .ourWork {
+
+position: relative;
+left: 680px;
+top: 200px;
+background-color: white;
+font-weight: bold;
+font-size: 1rem;
+border: solid 2px;
+border-radius: 20px;
+box-shadow: 5px 4px 4px rgb(0, 0, 0);
+    }
+.ourWork a {
+color: black;
+font-weight: bold;
+z-index: ;
+}
+
+
+
+
+ .ourWork:hover {
+
+cursor: pointer;
+background-color: rgb(246, 219, 219);
+ }
+
+ .img1, .img2, .img3, .img4, .img5 {
+width: 1500px;
+
+
+ }
+
+ h2, .cap1, .cap2, .cap3, .fp, h1, .cap4, .cap5 {
+display: flex;
+justify-content: center;
+
+ }

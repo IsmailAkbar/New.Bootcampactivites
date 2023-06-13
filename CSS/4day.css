@@ -29,13 +29,11 @@ vw = Relative to 1% of the width of the viewport*
 
 */
 
-
-
-}
-
-
-p {
-background-color: black;
-
-
+div {
+width: 200px;
+height: 200px;
+border: solid;
+justify-content: space-between;
+background-color: grey;
+display: flex;
 }

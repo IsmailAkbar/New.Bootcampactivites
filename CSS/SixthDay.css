@@ -1,0 +1,265 @@
+/* how does :nth-child() pseudo selector work? Konstantinos
+we add a value inside the selector
+n value start from 0 will increase 1 each time
+
+How to give different style to our html page for different screen size? Evelina
+ we are using media to have different style on different screen size.
+How to add some content before an element? Johan
+element::before{}
+ */
+  
+  
+  
+  :root {
+   --mainColor: brown; /*global scope variable*/
+   --backgroundColor:red;
+   --align:center;
+--width: 100px;
+--height: 60px;
+--back: aqua;
+
+
+
+
+
+
+  }
+  h1 {
+    background-color: var(--mainColor);
+  }
+  div{
+    background-color: var(--mainColor);
+  }
+  h2 {
+    --backgroundColor:green;
+    --primary-color: #ff0000; /*local scope variable*/
+    background-color: var(--primary-color);
+  }
+
+  /*!TASK 
+  create two paragraph
+  change it's text colour and background colour using custom property/CSS variables.
+  for background colour use global scope variable
+  for text colour use local scope colour
+  */
+
+.p1 {
+  background-color: var(--backgroundColor);
+
+ --mainColor: rgb(42, 48, 165); 
+
+color: var(--mainColor);
+
+
+
+
+}
+
+  .p2 {
+
+
+    background-color: var(--backgroundColor);
+
+    --mainColor: rgb(217, 173, 173); 
+    color: var(--mainColor);
+
+
+
+
+  }
+
+
+
+
+
+/*Creating Animations and Keyframes*/
+  .animatedDiv1{
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    margin-top: 10px;
+    animation-name: animationpractice1; /*bind the animation*/
+    animation-duration: 4s; /*time animation should take to complete.*/
+}
+
+@keyframes animationpractice1{
+    from{background-color: blue;}
+    to{background-color: red}
+}
+
+.animatedDiv2{
+    height: 100px;
+    width: 200px;
+    background-color: blue;
+    margin-top: 10px;
+    position: relative;
+    animation-name: animationpractice2;  /*bind the animation*/
+    animation-duration: 5s;  /*time animation should take to complete.*/
+    animation-delay: 5s; /* delay for the start of an animation*/
+    animation-iteration-count: 2;  /*number of times an animation should run*/
+}
+@keyframes animationpractice2
+{
+0%{ 
+  background-color: blue ;
+  }
+20%{
+  background-color: chartreuse;
+  left: 100px;
+  }
+50%{
+    background-color: blueviolet;
+    color: black;
+    left: 200px;
+   }
+100%{
+background-color: blue;
+left: 0px;
+}
+}
+
+.animatedDiv3
+{
+  height: 100px;
+  width: 200px;
+  background-color: rgb(0, 255, 179);
+  margin-top: 10px;
+  position: relative;
+  animation-name: animationpractice3;
+  animation-duration: 5s;
+}
+@keyframes animationpractice3
+{
+0%{top:0px;}
+25%{top:100px;}
+50%{top:200px;}
+75%{top:0px;}
+}
+
+
+.animatedDiv4
+{
+  height: 100px;
+  width: 200px;
+  background-color: rgb(0, 255, 179);
+  margin-top: 10px;
+  position: relative;
+  animation-name: animationpractice4;
+  animation-duration: 10s;
+}
+@keyframes animationpractice4
+{
+0%{left:0px;
+top: 0px;}
+20%{left:100px;
+  top: 0px;}
+40%{left:300px;
+  top: 0px;}
+60%{left: 100px;
+  top: 0px;}
+80%{left: 100px;
+  top: 300px;}
+90%{
+left: 100px;
+top: 0px;}
+100%{left:0px;
+top: 0px;}
+}
+
+
+}
+
+
+/* TODO
+Create a div which animate square and change background colour as below:
+when the animation is 25% complete
+background-color  =>brown
+when the animation is 50% complete
+background-color =>orange
+when the animation is 75% complete
+background-color =>blue
+when the animation is 100% complete
+background-color =>back to original colour
+!use Custom variables for colour changing.
+*/
+.div1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example; /*bind the animation*/
+  animation-duration: 4s; /*time animation should take to complete.*/
+  animation-delay: 4s; /* delay for the start of an animation*/
+}
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:var(--mainColor); left:200px; top:0px;}
+    50%  {background-color:orange; left:200px; top:200px;}
+    75%  {background-color:blue; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+
+/*Creating Transitions in CSS*/
+
+.transitionDiv1{
+  margin: 50px;
+  height: 200px;
+  width: 200px;
+  background-color: brown;
+  transition: width 2s, background-color 3s;
+}
+.transitionDiv1:hover{
+  width:400px;
+  background: rgb(176,119,214);
+}
+
+button{
+  width: 150px;
+height: 70px;
+  transition: background-color 10s, width 1s, height 5s, font-size 3s;
+}
+button:hover{
+  background-color: var(--back);
+  width: var(--width);
+  height: var(--height);
+  font-size: 20px;
+}
+/*
+TODO 
+Create a button and change the height, width and
+background color uisng transition - use custom variable.
+*/
+
+
+
+/* CSS Transform Property*/
+
+.transformDiv1, .transformDiv2, .transformDiv2{
+  margin: 20px;
+  height:100px;
+  background-color: aqua;
+  width: 350px;
+}
+.transformDiv2{background-color: darkgoldenrod;}
+.transformDiv1{
+transform: translate(200px, 400px);
+}
+.transformDiv2{
+  transform: rotate(70deg);
+}
+.transformDiv3{
+  height: 100px;
+  width: 150px;
+  transition: transform 5s;
+}
+.transformDiv3:hover{
+  transform: rotate(360deg);
+}
+.transformDiv4{
+  height: 100px;
+  width: 300px;
+  transform:skewX(40deg);
+  transform: skewY(70deg);
+  }

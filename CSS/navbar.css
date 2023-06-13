@@ -1,97 +1,74 @@
+* {padding: 0px;
+margin: 0px;}
 
-body {
-background-image: url(https://img.freepik.com/free-vector/abstract-geometric-wireframe-background_52683-59421.jpg);
-
-background-repeat: no-repeat;
-background-size:cover ;
-background-attachment:fixed;
-}
-
-header {margin-top: -10px;
-background-color: rgb(33, 125, 125);
-text-align: center;
-margin-right: -8px;
-margin-left: -8px;
-color: rgb(255, 255, 255);
-}
+div {}
 
 
 
-ul {
-padding: 0px;
-margin: 0px;
-list-style: none;
-top: 0px;
-margin-left: 430px;
-position: relative;
-}
 
 li {
-display: inline-block;
-text-align: center;
+
+float: left;
+list-style-type: none;
+padding: 50px;
+
 }
+
 
 li a{
-    padding: 20px;
-color: rgb(46, 46, 57);
-font-size: 20px;
 text-decoration: none;
 display: inline-block;
-
-margin: 10px;
-}
-
-nav {
-background-color: rgb(230, 232, 226);
-margin-left: -5px;
-margin-right: -8px;
-margin-top: 0px;
-position: sticky;
-top: 0px;
+position: relative;
+left: ;
 }
 
 
-#img1 {width: 500px;
-height: 500px;
+nav{ background-color: aqua;
+   width: 100%;
+   height: 100px;
+position: relative;
+   top: -10px;
+   
 }
 
 
-.subList{
+.sBar {
 
-    display: inline-block;
-
-    text-decoration: none;
-
- }
-
- .subMenu{
-
-    display: none;
-
-    position: absolute;
-
-    width: 120px;
-
-    background-color: gray;
-
- }
-
- .subList:hover .subMenu{
-
-    display: block;
-
- }
-
- .subMenu a{
-
-    display: block;
-
-    /* text-align: left; */
-
- }
+   
+}
 
 
- /* camelcasing - class name first word sub lower case second word Menu is starting with uppercase */
+
+.menu {
+
+
+}
+
+
+
+
+
+
+
+.subMenu {
+display:none;
+position: absolute;
+width: 120px;
+background-color: aqua;
+}
+
+.menu:hover    .subMenu{
+
+display: block;
+text-align: left;
+
+}
+
+
+
+ 
+
+
 
 
 
