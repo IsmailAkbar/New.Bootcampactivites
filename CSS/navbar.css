@@ -56,9 +56,42 @@ height: 500px;
 }
 
 
+.subList{
+
+    display: inline-block;
+
+    text-decoration: none;
+
+ }
+
+ .subMenu{
+
+    display: none;
+
+    position: absolute;
+
+    width: 120px;
+
+    background-color: gray;
+
+ }
+
+ .subList:hover .subMenu{
+
+    display: block;
+
+ }
+
+ .subMenu a{
+
+    display: block;
+
+    /* text-align: left; */
+
+ }
 
 
-
+ /* camelcasing - class name first word sub lower case second word Menu is starting with uppercase */
 
 
 
