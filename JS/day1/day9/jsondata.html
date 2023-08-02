@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- JSON - JavaScript Object Notation
+
+
+    Text based data format that is used to transfer data.
+    
+    
+    Similar to Obejcts in JS we have worked with before.
+    
+    
+    Differences: JSON Object
+    
+    
+    Works in key/value pairs - both wrapped in double quotes
+    Cannot contain functions (methods)
+    Can be created and interpreted by other langunages
+    Popular method of transferring data - commonly used by APIs
+    
+    
+    JSON Methods:
+    
+    
+    parse() : converts string to an array.
+    
+    
+    stringify() : converts JSON object to a JSON sring
+    
+    
+    Local Storage : Use of local storage stores data in the browser console/browser window with no expiration date.
+    Data is not deleted even when the browser is close ,the data is available for future browser session.
+    
+    
+    LocalStorage.setItem(key,value-using JSON format) :  save data to local storage use:
+    
+    
+    getItem(key) : to get item saved from localstorage -->
+
+
+<p id="myJsonObject"></p>
+<p id="myObjectKeys"></p>
+<p id="stringedObject"></p>
+
+<script>
+// courseDetails is JSON Object
+let courseDetails = 
+// key / value pairs - both wrapped in double ""
+{"fullName": "Jane Doe", // full name index position 0
+                      "age": "26", // full name index position 1
+                      "language": "Javascript", // full name index position 2
+                      "course": "Software Dev Bootcamp" // full name index position 3 
+
+}
+
+console.log(courseDetails)
+
+
+//access values in JSON object by name/variable/property/attribute
+
+let courseObject = document.getElementById("myJsonObject");
+
+// ObjectName.attribute to display values
+
+courseObject.innerHTML = "The user is, " + courseDetails.age + " and his name is " + courseDetails.fullName + ",  he is learning " 
++ courseDetails.language + " through the " + courseDetails.course ;
+
+//access values by index
+document.getElementById("myObjectKeys").innerHTML = (Object.keys(courseDetails)[0] + " : " + courseDetails.fullName
++ "<br/>" + Object.keys(courseDetails)[1] + " : " + courseDetails.age
+
+);
+
+
+//convert object to string
+// stringify converts object to string
+document.write(typeof courseDetails)
+let stringCourseDetils = JSON.stringify(courseDetails)
+document.write("<br/>", typeof stringCourseDetils)
+
+
+// convert a string using parse to an object
+let stringOfText = JSON.parse(stringCourseDetils)
+document.write("<br/>", typeof stringOfText)
+
+
+</script>
+
+
+
+</body>
+</html>

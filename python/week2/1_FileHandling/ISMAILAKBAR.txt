@@ -1,0 +1,7 @@
+Today is a day
+YourA
+text
+goes
+here
+in
+newlines

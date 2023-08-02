@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <!-- move over / move out effect               this keyword refers to html element(The html element onmouseover) -->
+<p onmouseover="myMouseOverEvent(this)" onmouseout="myMouseOutEvent(this)">Mouse over ? mouse out</p>
+<br><br><br><br>
+
+<!--  change effect of textfield -->
+<input type="text" onfocus="myMouseFocus(this)" onblur="onBlur(this)">
+<br><br><br><br>
+<!-- Selectiing and displaying different colors -->
+<select onchange="changeEachColor(this)">
+
+<option value="">Select a color</option>
+<option value="blue">Blue</option>
+<option value="red">Red</option>
+<option value="green">Green</option>
+<option value="yellow">Yellow</option>
+<option value="grey">Grey</option>
+
+</select>
+<br><br><br><br>
+<!-- Selectiing and displaying different images -->
+<select onchange="changeEachImages(this.value)" >
+
+    <option value="" >Select an image</option>
+    <option value="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg" >HTML</option>
+    <option value="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg">CSS</option>
+    <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png">JS</option>
+    <option value="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png">Python</option>
+    <option value="">MYSQL</option>
+
+
+    
+</select>
+<br><br><br><br>
+
+
+
+    <script src="./events.js"></script>
+</body>
+</html>

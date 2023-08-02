@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DateTIme</title>
+</head>
+<body onload="displayDateTime()">
+   Current Data:  
+    <p id="theDate"></p>
+    Current Date time only: 
+    <p id="dateTimeInfo"></p>
+    Current Date only: 
+    <p id="dateInfo"></p>
+    Current time only: 
+    <p id="timeInfo"></p>
+    Current Hours only: 
+    <p id="hoursOnly"></p>
+
+
+
+
+
+
+
+<script>
+function displayDateTime() {
+    // create an instance object from the date class/library
+
+    let d = new Date();
+let localDateTime = d.toLocaleString();
+let localDate = d.toLocaleDateString();
+let localTime = d.toLocaleTimeString();
+let getHrs = d.getHours();
+
+document.getElementById("theDate").innerHTML = d;
+document.getElementById("dateTimeInfo").innerHTML = localDateTime;   
+document.getElementById("dateInfo").innerHTML = localDate;   
+document.getElementById("timeInfo").innerHTML = localTime;   
+document.getElementById("hoursOnly").innerHTML = getHrs;  
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+:root {
+--dark:#1f2937;
+--primary:crimson;
+    --mainColor: brown; /*global scope variable*/
+    --backgroundColor:red;
+    --align:center;
+ --width: 100px;
+ --height: 60px;
+ --back: aqua;
+--darth:#111827;
+--light:#f3f4f6;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+font-family: 'Fira sans', sans-serif;
+
+}
+
+body {
+
+    background-image: url(https://t3.ftcdn.net/jpg/03/18/52/62/360_F_318526270_1nNrGvpQhRmhwlBbLen8xQWFqjFMURoL.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+color: var(--light);
+}
+
+.stopwatch {
+
+text-align: center;
+background-image: url(https://www.rtings.com/images/reviews/monitor/dell/s2721d/s2721d-average-room-off-small.jpg);
+background-position: -150px;
+width: 100%;
+max-width: 360px;
+margin: 14rem auto;
+padding: 1rem 2rem;
+border-radius: 1rem;
+}
+
+.timer {
+
+font-size: 5rem;
+font-weight: 400;
+margin-bottom: 1rem;
+}
+
+.buttons {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttons button{
+
+    appearance: none;
+    background:none;
+    border:none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+color: var(--light);
+background-color: var(--primary);
+margin: 0rem 0.5rem ;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+font-size: 1.1rem;
+
+transition: 0.4s;
+}
+
+button:hover{
+
+opacity: 0.5;
+
+}
+
+button:active{
+
+background-color: var(--dark);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

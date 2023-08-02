@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage</title>
+</head>
+<body>
+    <!-- local storage stores data in browser console with no expiration date -->
+<!-- data never deleted even when browser closed -->
+
+<p id="localStorage1"></p>
+<p id="localStorage2"></p>
+<p id="localStorage3"></p>
+
+
+
+
+
+
+
+
+
+<script>
+// window.localStorage or just localStorage
+//localStorage.setItem(key, value)  //saves key value pairs in the browser
+// localStorage.getItem(key)  //retrieves  value  based on the keys in the browser
+
+
+
+localStorage.setItem("fName", "Ismail Mohammed")
+localStorage.setItem("lName", "Akbar")
+
+
+console.log(localStorage.getItem("fName"))
+console.log(localStorage.getItem("lName"))
+
+document.getElementById("localStorage1").innerHTML = localStorage.getItem("fName")
+document.getElementById("localStorage1").innerHTML += localStorage.getItem("lName")
+
+
+
+
+// localStorage.remove("key") // removes item from storage
+
+// localStorage.removeItem("lName");
+
+localStorage.clear()
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
