@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    
+    body{
+        background-color: #1f242d;
+        color: #fff;
+    }
+
+    .header {
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+        
+        }
+    
+    .logo {
+    
+            font-size: 1.5rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: default;
+            opacity: 0;
+            animation: goRight 1s ease forwards;
+            
+            }
+            
+    .navbar a {
+            display: inline-block;
+            font-size: 1.1rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 35px;
+            transition: 0.3s;
+            animation: goUp 0.5s ease forwards;
+            animation-delay: calc(.2s * var(--i));
+            }
+            
+    .navbar a:hover, .navbar a.active {
+            
+            color: #0ef;
+            
+            }
+    
+p{
+text-align: left;
+font-size: medium;
+margin-top: 30px;
+border: #0ef 1px solid;
+padding: 10px;
+}
+
+.pHtml{
+    color:#1f242d;
+}
+.pCss{
+    color:#1f242d;
+}
+.pJs{
+    color:#1f242d;
+}
+.pPy{
+    color:#1f242d;
+}
+.pSql{
+color:#1f242d;
+   
+}
+
+p:hover{
+    transition: 1.5s;
+    color: #fff;
+}
+
+
+    .skills-section{
+    padding-top: 20px;
+    }
+    
+    .skills-header{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    position: relative;
+    animation: zoomIn 2s ease forwards;
+    font-size: large
+    ;
+    }
+    
+    
+    
+    .skills-container{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:;
+    text-align: center;
+    grid-gap:1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    }
+    .skills-box{
+    padding: 1rem;
+    color: #fff;
+    cursor:pointer;
+    animation: zoomIn 2s ease forwards;
+    }
+   
+    .skills-box:hover .skills-img{
+    transform: translateX(-20px);
+    }
+    
+    .skills-title{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    }
+    
+    .skills-title:after{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    width:20px;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #fff;
+    transition: .5s;
+    }
+    
+    .skills-title:before{
+    content: '';
+    position:absolute;
+    bottom: 0;
+    width:100px;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #0ef;
+    }
+
+
+    
+    .skills-icons{
+    width:50px;
+    z-index:2;
+    }
+    
+    .skills-img{
+    width:90px;
+    height:90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition: .5s;
+    }
+    
+    .skills-img:after{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    width:50%;
+    height:90px;
+    background: rgba(100, 100, 100, 0.5);
+    border-radius: 45px 0 0 45px;
+    }
+    .skills-title h3{
+    color: #fff;
+    margin-top: 0.5rem;
+    }
+    /* @media screen and (max-width:990px){
+     .skills-container{
+     grid-tempLate-columns: repeat(2, 1fr);
+     padding: 2rem 50px;
+     }
+    }
+    
+    @media screen and (max-width:650px){
+     .skills-container{
+     grid-tempLate-columns:2fr;
+     padding: 2rem 50px;
+     }
+    } */
+
+    @keyframes goUp {
+        0% {
+          transform: translateY(100px);
+          opacity: 0;
+      
+        }
+      
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+          
+        }
+      }
+@keyframes goRight {
+        0% {
+          transform: translateX(-100px);
+          opacity: 0;
+      
+        }
+      
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+          
+        }
+      }
+      @keyframes zoomIn {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+      
+        }
+      
+        50% {
+            transform: scale(0.5);
+            opacity: 0;
+        
+          }
+
+        100% {
+          transform: scale(1);
+          opacity: 1;
+          
+        }
+      }

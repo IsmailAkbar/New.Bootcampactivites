@@ -35,7 +35,7 @@ function start() {
         return
     }
 
-interval = setInterval(time, 1000);
+interval = setInterval(time, 1000); // creates the timer and calls timer function every 1 sec
 
 
 }
